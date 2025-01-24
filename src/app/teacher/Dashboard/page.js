@@ -2,7 +2,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>پنل ادمین مدیر مدرسه </div>
+    <div>پنل اصلی ادمین مدیر مدرسه </div>
   )
 }
 
