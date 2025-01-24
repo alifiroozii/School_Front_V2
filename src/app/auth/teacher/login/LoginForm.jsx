@@ -5,7 +5,7 @@ const LoginForm = () => {
     <>
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>صفحه ورود  معاونت</title>
+      <title >صفحه ورود معلم   </title>
 
       {/* فایل‌های CSS و پلاگین‌ها */}
       <link rel="icon" href="/assets/images/favicon.jpg" type="image/png" />
@@ -23,7 +23,7 @@ const LoginForm = () => {
             <div className="col-12 d-lg-none">
               <div className="p-3 rounded-4 w-100 d-flex align-items-center justify-content-center bg-grd-primary">
                 <img
-                  src="/assets/images/auth/school-man.svg"
+                  src="/assets/images/auth/teacher.svg"
                   className="img-fluid"
                   alt="Login Illustration"
                 />
@@ -113,7 +113,7 @@ const LoginForm = () => {
             <div className="col-lg-6 d-none d-lg-flex">
               <div className="p-3 rounded-4 w-100 d-flex align-items-center justify-content-center bg-grd-primary">
                 <img
-                  src="/assets/images/auth/school-man.svg"
+                  src="/assets/images/auth/teacher.svg"
                   className="img-fluid"
                   alt="Login Illustration"
                 />

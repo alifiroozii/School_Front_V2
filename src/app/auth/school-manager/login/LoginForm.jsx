@@ -5,148 +5,123 @@ const LoginForm = () => {
     <>
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title></title>
+      <title>صفحه ورود  مدیر مدرسه</title>
 
-      {/* <!-- Favicon --> */}
-      <link
-        rel="icon"
-        href="/assets/images/favicon-32x32.png"
-        type="image/png"
-      />
-
-      {/* <!-- Loader CSS --> */}
-      <link href="/assets/css/pace.min.css" rel="stylesheet" />
-
-      {/* <!-- Plugins CSS --> */}
-      <link
-        href="/assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css"
-        rel="stylesheet"
-      />
-      <link
-        rel="stylesheet"
-        href="/assets/plugins/metismenu/metisMenu.min.css"
-      />
-      <link rel="stylesheet" href="/assets/plugins/metismenu/mm-vertical.css" />
-
-      {/* <!-- Bootstrap CSS --> */}
+      {/* فایل‌های CSS و پلاگین‌ها */}
+      <link rel="icon" href="/assets/images/favicon.jpg" type="image/png" />
       <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
-
-      {/* <!-- Google Fonts --> */}
-      <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&display=swap"
-        rel="stylesheet"
-      />
-      <link
-        href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined"
-        rel="stylesheet"
-      />
-
-      {/* <!-- Main Custom CSS --> */}
       <link href="/assets/css/bootstrap-extended.css" rel="stylesheet" />
+      <link href="/assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
       <link href="/sass/main.css" rel="stylesheet" />
-      <link href="/sass/dark-theme.css" rel="stylesheet" />
-      <link href="/sass/blue-theme.css" rel="stylesheet" />
       <link href="/sass/responsive.css" rel="stylesheet" />
 
-      {/*authentication*/}
-      <div
-        className="auth-basic-wrapper d-flex align-items-center justify-content-center "
-        dir="rtl"
-      >
-        <div className="container-fluid my-5 my-lg-0">
-          <div className="row">
-            <div className="col-12 col-md-8 col-lg-6 col-xl-5 col-xxl-4 mx-auto">
-              <div className="card  rounded-4 mb-0 border-top border-4 border-primary ">
-                <div className="card-body p-5">
+      {/* فرم لاگین با تصویر */}
+      <div className="mx-3 mx-lg-0" dir="rtl">
+        <div className="card my-5 col-xl-9 col-xxl-8 mx-auto rounded-4 overflow-hidden p-4">
+          <div className="row g-4">
+            {/* تصویر در حالت موبایل */}
+            <div className="col-12 d-lg-none">
+              <div className="p-3 rounded-4 w-100 d-flex align-items-center justify-content-center bg-grd-primary">
+                <img
+                  src="/assets/images/auth/school-principal.svg"
+                  className="img-fluid"
+                  alt="Login Illustration"
+                />
+              </div>
+            </div>
+
+            {/* فرم لاگین */}
+            <div className="col-lg-6 d-flex">
+              <div className="card-body">
+                <div className="d-flex align-items-center mb-4">
                   <img
-                    //لوگو گنج درون
-                    // src="/assets/images/logo1.png"
-                    className="mb-4"
-                    width={145}
-                    alt=""
+                    src="/assets/images/favicon.jpg"
+                    className="me-3"
+                    width={37}
+                    alt="favicon"
                   />
-                  <h4 className="fw-bold">ادمین گنج درون</h4>
-                  <p className="mb-0">
-                    برای ورود به حساب خود اطلاعات را وارد کنید
-                  </p>
-                  <div className="form-body my-5">
-                    <form className="row g-3">
-                      <div className="col-12">
-                        <label
-                          htmlFor="inputEmailAddress"
-                          className="form-label"
-                        >
-                          کد ملی
-                        </label>
+                  <h4 className="fw-bold mb-0">شروع کنید</h4>
+                </div>
+
+                <p className="mb-0">
+                  اطلاعات کاربری خود را وارد کنید تا وارد حساب کاربری شوید
+                </p>
+
+                <div className="form-body mt-4">
+                  <form className="row g-3">
+                    <div className="col-12">
+                      <label htmlFor="inputEmailAddress" className="form-label">
+                        کد ملی
+                      </label>
+                      <input
+                        className="form-control"
+                        id="inputEmailAddress"
+                        placeholder="کد ملی خود را وارد کنید"
+                      />
+                    </div>
+                    <div className="col-12">
+                      <label htmlFor="inputChoosePassword" className="form-label">
+                        رمز عبور
+                      </label>
+                      <div className="input-group" id="show_hide_password">
                         <input
-                          className="form-control"
-                          id="inputEmailAddress"
-                          placeholder="**********"
+                          type="password"
+                          className="form-control border-end-0"
+                          id="inputChoosePassword"
+                          placeholder="رمز عبور را وارد کنید"
                         />
-                      </div>
-                      <div className="col-12">
-                        <label
-                          htmlFor="inputChoosePassword"
-                          className="form-label"
+                        <a
+                          href="javascript:;"
+                          className="input-group-text bg-transparent"
                         >
-                          رمز عبور
-                        </label>
-                        <div className="input-group" id="show_hide_password">
-                          <input
-                            type="password"
-                            className="form-control "
-                            id="inputChoosePassword"
-                            placeholder="رمز عبور را وارد کنید"
-                          />
-                          {/* <a
-                        href="javascript:;"
-                        className="input-group-text bg-transparent"
-                      >
-                        <i className="bi bi-eye-slash-fill" />
-                      </a> */}
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                        <div className="form-check form-switch">
-                          <input
-                            className="form-check-input"
-                            type="checkbox"
-                            id="flexSwitchCheckChecked"
-                          />
-                          <label
-                            className="form-check-label"
-                            htmlFor="flexSwitchCheckChecked"
-                          >
-                            مرا به خاطر بسپار
-                          </label>
-                        </div>
-                      </div>
-                      <div className="col-md-6 text-end">
-                        <a href="forgot-password">
-                          رمز عبور را فراموش کرده‌اید؟
+                          <i className="bi bi-eye-slash-fill" />
                         </a>
                       </div>
-                      <div className="col-12">
-                        <div className="d-grid">
-                          <button
-                            type="submit"
-                            className="text-white btn btn-grd-primary"
-                          >
-                            ورود
-                          </button>
-                        </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="form-check form-switch">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          id="flexSwitchCheckChecked"
+                          defaultChecked=""
+                        />
+                        <label
+                          className="form-check-label"
+                          htmlFor="flexSwitchCheckChecked"
+                        >
+                          مرا به خاطر بسپار
+                        </label>
                       </div>
-                    </form>
-                  </div>
+                    </div>
+                    <div className="col-12">
+                      <div className="d-grid">
+                        <button
+                          type="submit"
+                          className="btn btn-grd-primary text-white"
+                        >
+                          ورود
+                        </button>
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
+
+            {/* تصویر در حالت دسکتاپ */}
+            <div className="col-lg-6 d-none d-lg-flex">
+              <div className="p-3 rounded-4 w-100 d-flex align-items-center justify-content-center bg-grd-primary">
+                <img
+                  src="/assets/images/auth/school-principal.svg"
+                  className="img-fluid"
+                  alt="Login Illustration"
+                />
+              </div>
+            </div>
           </div>
-          {/* پایان ردیف */}
         </div>
       </div>
-      {/*authentication*/}
-      {/*plugins*/}
     </>
   );
 };
