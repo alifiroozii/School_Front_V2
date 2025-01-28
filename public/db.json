@@ -1,0 +1,45 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "firstName": "Ali",
+        "lastName": "Firoozi",
+        "password": "teacher123",
+        "nationalId": "1234567890",
+        "role": "teacher"
+      },
+      {
+        "id": 2,
+        "firstName": "Sara",
+        "lastName": "Ahmadi",
+        "password": "student123",
+        "nationalId": "2345678901",
+        "role": "student"
+      },
+      {
+        "id": 3,
+        "firstName": "Mohammad",
+        "lastName": "Karimi",
+        "password": "parent123",
+        "nationalId": "3456789012",
+        "role": "parent"
+      },
+      {
+        "id": 4,
+        "firstName": "Reza",
+        "lastName": "Hosseini",
+        "password": "vice123",
+        "nationalId": "4567890123",
+        "role": "school-manager"
+      },
+      {
+        "id": 5,
+        "firstName": "Neda",
+        "lastName": "Rahimi",
+        "password": "admin123",
+        "nationalId": "5678901234",
+        "role": "admin"
+      }
+    ]
+  }
+  

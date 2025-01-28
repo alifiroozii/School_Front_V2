@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -17,7 +21,8 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "strictNullChecks": true
   },
   "include": [
     "next-env.d.ts",
@@ -25,7 +30,11 @@
     "**/*.ts",
     "**/*.tsx",
     "src/app/auth/parent/login/LoginForm.jsx",
-    "src/app/auth/parent/page.jsx"
-, "src/app/layout.jsx", "src/app/page.jsx"  ],
-  "exclude": ["node_modules"]
+    "src/app/auth/parent/page.jsx",
+    "src/app/layout.jsx",
+    "src/app/page.jsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
