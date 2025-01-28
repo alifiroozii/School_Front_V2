@@ -47,7 +47,7 @@ const LoginForm = () => {
                     width={37}
                     alt="favicon"
                   />
-                  <h4 className="fw-bold mb-0"> ورود دانش آموزnpm install axios
+                  <h4 className="fw-bold mb-0"> ورود دانش آموز
                   </h4>
                 </div>
 

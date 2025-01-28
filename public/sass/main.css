@@ -1581,4 +1581,50 @@ form select.error:focus {
   -webkit-font-feature-settings: "ss02";
   font-feature-settings: "ss02";
 }
+/* موبایل (کمتر از 576px) */
+@media (max-width: 576px) {
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;  /* آیتم‌ها زیر هم قرار بگیرند */
+    align-items: flex-end;  /* راست‌چین کردن آیتم‌ها */
+    width: 100%;  /* عرض منو 100% */
+  }
 
+  .navbar-nav .nav-item {
+    text-align: right;  /* متن آیتم‌ها راست‌چین */
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+/* تبلت (بین 577px و 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .navbar-nav {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;  /* آیتم‌ها زیر هم قرار بگیرند */
+     /* آیتم‌ها به سمت چپ قرار بگیرند */
+    width: 100%;  /* عرض منو 100% */
+  }
+
+  .navbar-nav .nav-item {
+    text-align: left;  /* متن آیتم‌ها به چپ */
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+/* لپ‌تاپ (بیش از 768px) */
+@media (min-width: 768px) {
+  .navbar-nav {
+    
+    display: flex;
+    flex-direction: row;  /* آیتم‌ها در یک خط */
+    justify-content: center;  /* آیتم‌ها در وسط قرار بگیرند */
+  }
+
+  .navbar-nav .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
