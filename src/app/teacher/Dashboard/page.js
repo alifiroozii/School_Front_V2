@@ -7,7 +7,7 @@ const page = () => {
   )
 }
 const Dashboard = () => {
-  // useEffect(() => {
+  /// useEffect(() => {
   //   const token = localStorage.getItem('token');
   //   if (!token) {
   //     window.location.href = '/auth/teacher/login';
