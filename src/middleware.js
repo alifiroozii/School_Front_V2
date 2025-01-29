@@ -1,6 +1,6 @@
-// import { NextResponse } from 'next/server';
-// // برای مشخص کردن صفحات لازم به ورود سایت
-// export function middleware(req) {
+import { NextResponse } from 'next/server';
+// برای مشخص کردن صفحات لازم به ورود سایت
+export function middleware(req) {
 //   const token = req.cookies.get('token');
 
 //   if (!token && req.nextUrl.pathname.startsWith('/')) {
@@ -8,8 +8,9 @@
 //   }
 
 //   return NextResponse.next();
-// }
+}
 
-// export const config = {
-//   matcher: ['/dashboard/:path*'],
-// };
+export const config = {
+  //matcher: ['/dashboard/:path*'],
+  matcher: ['/'],
+};

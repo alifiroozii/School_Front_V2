@@ -20,7 +20,7 @@
 // }
 import fs from 'fs/promises'; // استفاده از نسخه promises
 import path from 'path';
-import { authenticate } from '../utils/auth'; // وارد کردن میان‌افزار authenticate
+import { authenticate } from '../../utils/auth'; // وارد کردن میان‌افزار authenticate
 
 export default async function handler(req, res) {
   // بررسی متد درخواست
