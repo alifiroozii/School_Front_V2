@@ -1,0 +1,183 @@
+:root {
+    /* تعریف رنگ‌های سازمانی به صورت متغیر */
+    --primary-color: #231478; /* بنفش تیره */
+    --secondary-color: #4b1e82; /* بنفش میانی */
+    --tertiary-color: #82198c; /* بنفش روشن */
+    --accent-color: #d241aa; /* صورتی فانتزی */
+  
+    /* تعریف گرادیان */
+    --gradient-primary: linear-gradient(90deg, var(--primary-color), var(--tertiary-color));
+  }
+
+
+/* تنظیمات عمومی برای body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* رنگ پس‌زمینه سبک */
+    padding-top: 30px; /* فاصله از بالا برای جلوگیری از تداخل با هدر */
+    line-height: 1.6; /* فاصله خطوط مناسب */
+    margin: 0; /* حذف حاشیه پیش‌فرض */
+  }
+  
+  /* استایل کارت اصلی */
+  .custom-card {
+    background-color: #ffffff; /* پس‌زمینه سفید */
+    border-radius: 15px; /* گردی گوشه‌ها */
+  }
+  
+  /* استایل دکمه‌ها */
+  .btn-home {
+    background: var(--gradient-primary); /* گرادیان رنگ‌های سازمانی */
+    border: none; /* حذف خط دور دکمه */
+    border-radius: 25px; /* گردی دکمه */
+    padding: 10px 20px; /* فضای داخلی دکمه */
+    font-size: clamp(0.5rem, 4vw, 0.9rem); /* اندازه فونت متن */
+    color: #ffffff; /* رنگ متن سفید */
+    
+  }
+  
+  /* استایل تصاویر */
+  .img-fluid {
+    max-width: 100%; /* تصویر همیشه درون ظرف خود قرار بگیرد */
+    height: auto; /* حفظ نسبت ابعاد تصویر */
+    border-radius: 10px; /* گردی گوشه‌های تصویر */
+  }
+  
+  /* استایل متن‌ها */
+  h1 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem); /* اندازه عنوان پاسخگو به اندازه صفحه */
+    color: #82198c; /* رنگ بنفش تیره برای عنوان */
+    font-weight: bold; /* ضخامت فونت */
+    margin-bottom: 30px; /* فاصله از متن زیرین */
+  }
+  .highlight {
+    color: var(--primary-color); /* رنگ بنفش روشن */
+    font-weight: bold; /* اگر می‌خواهید ضخامت فونت بیشتر باشد */
+  }
+  
+  p {
+    margin-top: 15px;
+    position: relative;
+    color: #6c757d; /* رنگ خاکستری برای متن‌های توضیحی */
+    font-size: clamp(0.5rem, 4vw, 0.9rem); /* اندازه فونت متن */
+    margin-bottom: 15px; /* فاصله از المان بعدی */
+  }
+  
+  /* استایل شمارنده‌ها */
+  .stats-row {
+    display: flex;
+    flex-wrap: wrap; /* قابلیت شکستن خط در صورت نیاز */
+    justify-content: center; /* مرکز‌چین کردن المان‌ها */
+  
+    margin-top: 30px; /* فاصله از بالا */
+  }
+  
+  .stats-row h2 {
+    font-size: 2rem; /* اندازه شمارنده‌ها */
+    color: #82198c; /* رنگ بنفش روشن برای شمارنده‌ها */
+    margin-bottom: 5px; /* فاصله از توضیحات زیرین */
+  }
+  
+  .stats-row p {
+    font-size: 0.9rem; /* اندازه توضیحات زیر شمارنده‌ها */
+    color: #6c757d; /* رنگ خاکستری برای توضیحات */
+    margin-bottom: 0; /* حذف حاشیه پایینی */
+  }
+
+  /* کانتینر اصلی برای شمارنده‌ها */
+.stats-container {
+    gap: 20px; /* فاصله بین شمارنده‌ها */
+    margin-top: 30px;
+  }
+  
+  /* استایل هر شمارنده */
+  .stat-item {
+    
+    text-align: center;
+    flex: 1; /* همه شمارنده‌ها به یک اندازه فضا را اشغال کنند */
+  }
+  
+  /* جداکننده بین شمارنده‌ها */
+  .divider {
+    width: 1px; /* ضخامت خط جداکننده */
+    height: 50px; /* ارتفاع خط جداکننده */
+    background-color: #ddd; /* رنگ کمرنگ برای جداکننده */
+    margin: auto 10px; /* فاصله از چپ و راست */
+  }
+  
+  /* تنظیمات برای حالت موبایل */
+  @media (max-width: 768px) {
+    .stats-container {
+      flex-direction: row; /* شمارنده‌ها در یک ردیف قرار بگیرند */
+      overflow-x: auto; /* اگر فضا کم باشد، امکان اسکرول افقی */
+      white-space: nowrap; /* جلوگیری از شکستن خط */
+    }
+  
+    .stat-item {
+      flex: none; /* هر شمارنده اندازه ثابت داشته باشد */
+      margin-right: 20px; /* فاصله بین شمارنده‌ها */
+    }
+    .divider {
+        width: 1px; /* ضخامت خط جداکننده */
+        height: 50px; /* ارتفاع خط جداکننده */
+        background-color: #ddd; /* رنگ کمرنگ برای جداکننده */
+        margin: auto 0px; /* فاصله از چپ و راست */
+      }
+   
+  }
+  /* استایل دکمه "ورود" */
+.arrow-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px; /* اندازه فلش */
+  height: 24px; /* اندازه فلش */
+  background-color: #231478; /* رنگ بنفش تیره سازمانی */
+  border-radius: 50%; /* گرد کردن فلش */
+  transition: background-color 0.3s ease-in-out; /* افکت هاور */
+}
+
+.arrow-icon:hover {
+  background-color: #4b1e82; /* تغییر رنگ در حالت هاور */
+}
+
+/* استایل دکمه‌ها */
+.btn {
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.05); /* بزرگ‌نمایی دکمه در حالت هاور */
+}
+
+/* استایل گرید نقش‌ها */
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* ستون‌ها به صورت پاسخگو */
+  gap: 16px; /* فاصله بین مربع‌ها */
+  justify-content: center; /* مرکز‌چین کردن محتوا */
+}
+
+/* استایل مربع‌ها */
+.role-card {
+  width: 100px; /* عرض ثابت */
+  height: 100px; /* ارتفاع ثابت */
+  background-color: #231478; /* رنگ پیش‌فرض */
+  border-radius: 10px; /* گردی گوشه‌ها */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* افکت هاور */
+}
+
+.role-card:hover {
+  transform: scale(1.1); /* بزرگ‌نمایی در حالت هاور */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* سایه در حالت هاور */
+}
+
+/* استایل متن داخل مربع‌ها */
+.role-card span {
+  font-size: 0.8rem; /* اندازه متن */
+  text-align: center; /* متن در وسط قرار بگیرد */
+  color: #ffffff; /* رنگ متن سفید */
+}

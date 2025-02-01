@@ -1628,3 +1628,31 @@ form select.error:focus {
     margin-right: 10px;
   }
 }
+/* استایل گرید نقش‌ها */
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* ستون‌ها به صورت پاسخگو */
+  gap: 16px; /* فاصله بین مربع‌ها */
+  justify-content: center; /* مرکز‌چین کردن محتوا */
+}
+
+/* استایل مربع‌ها */
+.role-card {
+  width: 100px; /* عرض ثابت */
+  height: 100px; /* ارتفاع ثابت */
+  background-color: #231478; /* رنگ پیش‌فرض */
+  border-radius: 10px; /* گردی گوشه‌ها */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* افکت هاور */
+}
+
+.role-card:hover {
+  transform: scale(1.1); /* بزرگ‌نمایی در حالت هاور */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* سایه در حالت هاور */
+}
+
+/* استایل متن داخل مربع‌ها */
+.role-card span {
+  font-size: 0.8rem; /* اندازه متن */
+  text-align: center; /* متن در وسط قرار بگیرد */
+  color: #ffffff; /* رنگ متن سفید */
+}
