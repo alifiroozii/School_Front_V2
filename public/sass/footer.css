@@ -1,0 +1,54 @@
+/* استایل فوتر */
+.footer {
+    background: linear-gradient(90deg, #231478, #82198c); /* گرادیان رنگی */
+    color: #ffffff; /* رنگ متن سفید */
+  }
+  
+  .footer h3,
+  .footer h5 {
+    color: #ffffff; /* رنگ عنوان‌ها سفید */
+  }
+  
+  .footer a {
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer a:hover {
+    color: #ffcc00; /* تغییر رنگ لینک‌ها در حالت هاور */
+  }
+  
+  /* استایل آیکون‌ها */
+  .footer i {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .footer i:hover {
+    transform: scale(1.2); /* بزرگ‌نمایی آیکون‌ها در حالت هاور */
+  }
+  /* استایل فوتر */
+.footer {
+  background: linear-gradient(90deg, #231478, #82198c); /* گرادیان رنگی */
+  color: #ffffff; /* رنگ متن سفید */
+}
+
+.footer h5 {
+  font-size: 1.2rem;
+  color: #ffffff; /* رنگ عنوان‌ها سفید */
+}
+
+.footer a {
+  transition: color 0.3s ease-in-out;
+}
+
+.footer a:hover {
+  color: #ffcc00; /* تغییر رنگ لینک‌ها در حالت هاور */
+}
+
+/* استایل آیکون‌ها */
+.footer i {
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer i:hover {
+  transform: scale(1.2); /* بزرگ‌نمایی آیکون‌ها در حالت هاور */
+}

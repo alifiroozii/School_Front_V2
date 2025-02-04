@@ -22,7 +22,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="bg-white border-bottom py-2">
+    <header className="  py-2  ">
       <link rel="icon" href="/assets/images/favicon.jpg" type="image/png" />
       <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&display=swap"
@@ -30,8 +30,8 @@ export default function Header() {
       />
       <link href="sass/main.css" rel="stylesheet" />
       <link href="sass/blue-theme.css" rel="stylesheet" />
-      <div className="container-fluid">
-        <nav className="navbar bg-body-tertiary fixed-top">
+      <div className="container-fluid d-flex justify-content-center align-items-center mt-5 ">
+        <nav className="navbar bg-body-tertiary fixed-top ">
           <div className="container-fluid d-flex justify-content-between flex-wrap">
             {/* بخش ورود */}
             <div className="col-md-2 text-end">

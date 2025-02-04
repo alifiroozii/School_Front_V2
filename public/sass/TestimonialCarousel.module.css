@@ -1,0 +1,101 @@
+.carouselWrapper {
+  position: relative;
+  max-width: 100%;
+  padding: 40px 0; /* فاصله برای جلوگیری از چسبیدن نقاط */
+}
+
+.carousel {
+  padding-bottom: 40px; /* برای فاصله دادن به نقاط */
+}
+
+/* استایل کارت نظرات */
+.testimonialCard {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  min-height: 20px; /* یکنواخت سازی ارتفاع */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonialCard:hover {
+  transform: translateY(-5px);
+}
+
+/* اطلاعات کاربر */
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.userInfo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.userName {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.userRole {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.navButton:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prev {
+  left: -50px; /* بیرون از گرید */
+}
+
+.next {
+  right: -50px; /* بیرون از گرید */
+}
+
+/* نقاط پایین (pagination) */
+.swiper-pagination {
+  bottom: 0 !important; /* فاصله بیشتر از گرید */
+}
+
+.swiper-pagination-bullet {
+  background-color: #231478 !important;
+  width: 12px;
+  height: 12px;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: #4b1e82 !important;
+}
+
+/* حالت موبایل */
+@media (max-width: 768px) {
+  .prev {
+    left: -20px;
+  }
+
+  .next {
+    right: -20px;
+  }
+
+  .swiper-pagination {
+    bottom: 10px !important;
+  }
+}

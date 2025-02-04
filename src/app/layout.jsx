@@ -2,6 +2,7 @@
 
 import Header from '../components/header/landingHeader';
 
+import Footer from '../components/Footer';
 
 export default function RootLayout({ children }) {
 
@@ -15,7 +16,9 @@ export default function RootLayout({ children }) {
       <Header />
 
           {children}
-
+  
+      <Footer />
+    
       </body>
     </html>
   );
