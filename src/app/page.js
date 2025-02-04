@@ -101,7 +101,7 @@ export default function Home() {
               <p className="card-text ">
                 ما در اینجا هستیم تا با ارائه آموزش‌های کیفیت بالا و منابع
                 آموزشی رایگان، به دانش‌آموزان و خانواده‌ها کمک کنیم تا آینده
-                روشن‌تری برای خود و جامعه بسازند.
+                 .روشن‌تری برای خود و جامعه بسازند.
               </p>
               {/* بخش دکمه‌ها */}
               <div className="d-flex flex-md-row gap-3 justify-content-center">
